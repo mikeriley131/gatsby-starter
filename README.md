@@ -1,5 +1,5 @@
-# US-CPB-Gatsby-Starter
-A boilerplate for static sites built with Gatsby at CPB.\
+# Gatsby Starter
+A boilerplate for static sites built with Gatsby.\
 Built on [Gatsby.js](https://www.gatsbyjs.org/), a static site generator built with React.js.
 
 - production environment - PROD URL GOES HERE
