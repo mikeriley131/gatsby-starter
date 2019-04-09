@@ -1,0 +1,46 @@
+{
+  "name": "US-CPB-Gatsby-Starter",
+  "private": true,
+  "description": "A boilerplate for static sites built with Gatsby at CPB.",
+  "version": "0.1.0",
+  "author": "CPB Creative Tech",
+  "dependencies": {
+    "gatsby": "^2.0.76",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-accessibilityjs": "^1.0.3",
+    "gatsby-plugin-google-tagmanager": "^2.0.7",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-remove-trailing-slashes": "^2.0.6",
+    "gatsby-plugin-sass": "^2.0.7",
+    "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-plugin-sitemap": "^2.0.3",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "node-sass": "^4.11.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "devDependencies": {
+    "prettier": "^1.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cpbtechnology/US-CPB-Gatsby-Starter"
+  }
+}

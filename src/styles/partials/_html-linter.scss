@@ -1,0 +1,120 @@
+// sass-lint:disable force-attribute-nesting, no-qualifying-elements, force-pseudo-nesting, force-element-nesting, quotes, no-ids, brace-style
+
+
+//===================================================================
+// ===== HIGHLIGHT BAD MARK-UP PRIOR TO GOING TO PRODUCTION
+// ===================================================================
+
+// Used for development only
+// from
+// https://bitsofco.de/linting-html-using-css/
+// and
+// https://github.com/Heydon/REVENGE.CSS
+
+
+// Inline Styles
+// -------------------------------------------------------------------
+*:not(body)[style],
+
+// Faulty or Missing Link Targets
+// -------------------------------------------------------------------
+a:not([href]),
+a[href="#"],
+a[href=""],
+a[href*="javascript:void(0)"],
+
+// Unaccessible Images
+// -------------------------------------------------------------------
+img:not([alt]),
+img[alt=""], // instances of this may be acceptable (eg: for decorative images)
+
+// Missing Document Language
+// -------------------------------------------------------------------
+html:not([lang]),
+html[lang=""],
+
+// Incorrect Character Set
+// -------------------------------------------------------------------
+meta[charset]:not([charset="UTF-8"]),
+
+// Unaccessible Viewport Attributes
+// -------------------------------------------------------------------
+meta[name="viewport"][content*="user-scalable=no"],
+meta[name="viewport"][content*="maximum-scale"],
+meta[name="viewport"][content*="minimum-scale"],
+
+// Unlabelled Form Elements
+// -------------------------------------------------------------------
+// instances of these may be acceptable (eg: if form element is wrapped in a label element)
+input:not([id]),
+select:not([id]),
+textarea:not([id]),
+label:not([for]),
+
+// Unaccessible Form Elements
+// -------------------------------------------------------------------
+input:not([name]),
+select:not([name]),
+textarea:not([name]),
+form:not([action]),
+form:not([name]):not([id]),
+fieldset > *:first-child:not(legend),
+form button:not([type]),
+
+// Empty Interactive Elements
+// -------------------------------------------------------------------
+button:empty,
+a:empty,
+
+// Improperly Structured Mark-up
+// -------------------------------------------------------------------
+section > section:first-child,
+article > section:first-child,
+article > article:first-child,
+section > article:first-child,
+section > aside:first-child,
+aside > aside:first-child,
+article > aside:first-child,
+aside > article:first-child,
+aside > section:first-child,
+ol > *:not(li),
+ul > *:not(li),
+dl > *:not(dt):not(dd),
+dt + *:not(dd),
+abbr div,
+b div,
+i div,
+span div,
+em div,
+strong div,
+small div,
+cite div,
+q div,
+code div,
+label div,
+
+// Missing or Improper ARIA attributes
+// -------------------------------------------------------------------
+body > header:not([role="banner"]),
+body > div > header:not([role="banner"]),
+body > footer:not([role="contentinfo"]),
+body > div > footer:not([role="contentinfo"]),
+section [role="banner"],
+section [role="contentinfo"],
+article [role="banner"],
+article [role="contentinfo"],
+aside [role="banner"],
+aside [role="contentinfo"],
+#main:not(main):not([role="main"]),
+#footer:not(footer):not([role="contentinfo"]),
+#header:not(header):not([role="banner"]),
+#banner:not(header):not([role="banner"]),
+
+// Unnecessary or Deprecated Attributes
+// -------------------------------------------------------------------
+script[type="text/javascript"],
+link[rel="stylesheet"][type="text/css"]
+
+{
+  border: 5px solid $error;
+}

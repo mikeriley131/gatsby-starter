@@ -1,0 +1,24 @@
+// ===========================================================================
+// ==== SHOW MQ BREAKPOINT IN BOTTOM RIGHT CORNER
+// ===========================================================================
+
+// Used for development only
+
+body {
+  &:before {
+    background: $grey-dark;
+    bottom: 0;
+    color: $grey-light;
+    content: 'XS';
+    font-size: .75rem;
+    padding: .25em .5em;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+
+    @include mq($S) { content: 'S'; }
+    @include mq($M) { content: 'M'; }
+    @include mq($L) { content: 'L'; }
+    @include mq($XL) { content: 'XL'; }
+  }
+}

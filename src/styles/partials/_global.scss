@@ -1,0 +1,141 @@
+// ===========================================================================
+// ==== GLOBAL ELEMENTS
+// ===========================================================================
+body {
+  background: $bg-clr;
+  font-family: $font-stack;
+}
+
+main {
+
+  p,
+  ul,
+  ol {
+    margin-bottom: $space;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  ul.aligned-list {
+    list-style: disc;
+    margin-left: $half-space;
+
+    li {
+      margin-bottom: $half-space;
+      padding-left: $space;
+      text-indent: -$space;
+    }
+  }
+
+  a {
+    border-bottom: 1px dashed $link-clr;
+    color: $link-clr;
+    padding-bottom: 2px;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      color: $link-hover-clr;
+    }
+  }
+}
+
+h1,
+h2 {
+  margin-bottom: $half-space;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: .25rem;
+}
+
+nav {
+  ul {
+     display: flex;
+     justify-content: space-between;
+     list-style: none;
+  }
+}
+
+blockquote {
+  border-left: 4px solid $highlight-clr;
+  font-size: 1.25rem;
+  font-style: italic;
+  padding: 0 1rem;
+}
+
+small {
+  font-size: .85rem;
+  margin-bottom: 1rem;
+}
+
+figure {
+  margin: 0 $space;
+}
+
+.iframe-container {
+  height: 0;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+
+  &.iframe-container-16x9 {
+    padding-bottom: 56.25%; // for 16x9 windows
+  }
+
+  &.iframe-container-4x3 {
+    padding-bottom: 75%; // for 4x3 windows
+  }
+
+  iframe {
+    border: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top:0;
+    width: 100%;
+  }
+}
+
+table {
+  margin-bottom: $space;
+}
+
+tr {
+  &:nth-child(even) {
+    background: $grey;
+  }
+}
+
+th {
+  border-bottom: 1px solid $highlight-clr;
+  padding: $half-space;
+  padding-bottom: 0;
+  text-align: left;
+}
+
+td {
+  padding: $half-space;
+}
+
+.container {
+  padding: 0 $half-space;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $container-width;
+  width: 100%;
+
+  @include mq($L) {
+    max-width: ($container-width * 1.5);
+    padding: 0;
+  }
+}

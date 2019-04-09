@@ -1,0 +1,157 @@
+// ===========================================================================
+// ==== HELPER AND MODIFIER CLASSES
+// ===========================================================================
+
+// Grids
+// -------------------------------------------------------------------
+// Heydon Pickering's Fukol grid - https://github.com/Heydon/fukol-grids
+$grid-margin: -.5rem;
+$flex-basis: 10rem;
+$cell-margin: .5rem;
+
+.flex-grid {
+  &__wrapper {
+    margin: 1rem 0;
+    max-width: 960px;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    > * {
+      flex: 1 0 $flex-basis;
+      margin: $cell-margin;
+    }
+  }
+}
+
+// The HTML
+
+// <div class="flex-grid__wrapper">
+//   <ul class="flex-grid__grid">
+//     <li><!-- grid cell/item/child/whatever --></li>
+//     <li><!-- grid cell/item/child/whatever --></li>
+//     <li><!-- grid cell/item/child/whatever --></li>
+//     <li><!-- grid cell/item/child/whatever --></li>
+//     <li><!-- grid cell/item/child/whatever --></li>
+//     <li><!-- grid cell/item/child/whatever --></li>
+//     <li><!-- grid cell/item/child/whatever --></li>
+//     <li><!-- grid cell/item/child/whatever --></li>
+//   </ul>
+// </div>
+
+
+// Floats
+// -------------------------------------------------------------------
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.no-float {
+  float: none;
+}
+
+
+// Text
+// -------------------------------------------------------------------
+.intro {
+  font-size: 1.25em;
+}
+
+// Widths
+// -------------------------------------------------------------------
+.row {
+  float: left;
+  width: 100%;
+}
+
+.xshort,
+.short,
+.one-third,
+.med,
+.two-thirds,
+.long,
+.xlong,
+.full {
+  float: left;
+  width: 100%;
+}
+
+@include mq($S) {
+  .xshort,
+  .short,
+  .med {
+    width: 25%;
+  }
+
+  .one-third {
+    margin-right: 2%;
+    width: 32%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .long {
+    margin-right: 2%;
+    width: 49%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .two-thirds {
+    width: 66.66666%;
+  }
+}
+
+@include mq($L) {
+  .xshort {
+    width: 6.25%;
+  }
+
+  .short {
+    width: 12.5%;
+  }
+
+  .xlong {
+    width: 75%;
+  }
+}
+
+
+// /* FOR WORDPRESS SITES
+// ------------------------------------------------------------------------------ */
+// .align-right {
+//     text-align: right;
+// }
+
+// .align-center {
+//     text-align: center;
+// }
+
+// img.align-left {
+//     float: left;
+//     margin-right: 20px;
+//     margin-bottom: 20px;
+// }
+
+// img.align-right {
+//     float: right;
+//     margin-left: 20px;
+//     margin-bottom: 20px;
+// }
+
+// img.align-center {
+//     margin: 0 auto;
+// }
