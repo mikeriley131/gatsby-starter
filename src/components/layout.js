@@ -1,10 +1,10 @@
-import React, {Fragment} from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
 import '../styles/main.scss'
 
-import {Header} from './header'
+import { Header } from './header'
 
 export const Layout = ({ children }) => (
   <StaticQuery
@@ -19,6 +19,7 @@ export const Layout = ({ children }) => (
     `}
     render={data => (
       <Fragment>
+        <a class='skip-link' href='#main'>skip to main content</a>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main className='main' id='main' role='main'>
           {children}
@@ -29,5 +30,5 @@ export const Layout = ({ children }) => (
 )
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 }
