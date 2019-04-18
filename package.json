@@ -1,9 +1,9 @@
 {
-  "name": "US-CPB-Gatsby-Starter",
+  "name": "Pyrographic Design Gatsby Starter",
   "private": true,
-  "description": "A boilerplate for static sites built with Gatsby at CPB.",
+  "description": "Pyrographic Design boilerplate built with Gatsby.js.",
   "version": "0.1.0",
-  "author": "CPB Creative Tech",
+  "author": "Pyrographic Design <pyrographicdesign@gmail.com",
   "dependencies": {
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.20",
@@ -41,6 +41,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cpbtechnology/US-CPB-Gatsby-Starter"
+    "url": "https://github.com/mikeriley131/gatsby-starter"
   }
 }
