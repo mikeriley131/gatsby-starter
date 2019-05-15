@@ -20,5 +20,6 @@ body {
     @include mq($M) { content: 'M'; }
     @include mq($L) { content: 'L'; }
     @include mq($XL) { content: 'XL'; }
+    @include mq($XXL) { content: 'XXL'; }
   }
 }
