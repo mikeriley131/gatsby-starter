@@ -18,7 +18,7 @@ Built on [Gatsby.js](https://www.gatsbyjs.org/), a static site generator built w
 
     Install from package.json
     ```sh
-    npm i
+    yarn
     ```
 
 3.  **Start developing.**
