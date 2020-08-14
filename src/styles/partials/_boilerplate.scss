@@ -18,11 +18,18 @@ html {
   font-size: 100%; // Fallback for @include below. Set to browser default and then use ems when declaring your various font-sizes. (MR)
   line-height: 1.5;
 
-  $map: (18.75em: 1em, 45em: 1.0625em, 60em: 1.125em, 75em: 1.25em); // (300px / 720px / 960px / 1200px)
-  @include poly-fluid-sizing('font-size', $map);;
+  $map: (
+    18.75em: 1em,
+    45em: 1.0625em,
+    60em: 1.125em,
+    75em: 1.25em,
+  ); // (300px / 720px / 960px / 1200px)
+  @include poly-fluid-sizing('font-size', $map);
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -35,7 +42,7 @@ html {
  */
 
 ::-moz-selection {
-  background: $selection;;
+  background: $selection;
   text-shadow: none;
 }
 
@@ -73,6 +80,16 @@ video {
 }
 
 /*
+ * Remove default button styles.
+ */
+
+button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/*
  * Remove default fieldset styles.
  */
 
@@ -97,7 +114,7 @@ textarea {
 /* Skip link
 -------------------------------------------------------------------*/
 .skip-link {
-  padding: .5rem;
+  padding: 0.5rem;
   position: absolute;
   right: 100%;
   top: 0;
@@ -118,8 +135,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
-  font-size-adjust: .5;
+body,
+caption,
+th,
+td,
+input,
+textarea,
+select,
+option,
+legend,
+fieldset,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size-adjust: 0.5;
 }
 
 /*
@@ -131,7 +163,8 @@ li {
   max-width: 40rem;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: 2.5rem;
   line-height: 1.25;
 
@@ -146,7 +179,8 @@ h1 {
   }
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 1.5rem;
   line-height: 1.15384615;
 
@@ -161,11 +195,10 @@ h2 {
   }
 }
 
-h3 {
+h3,
+.h3 {
   font-size: 1.125rem;
-  font-variant: small-caps;
   line-height: 1.13636364;
-  text-transform: lowercase;
 
   @include mq($M) {
     font-size: 1.25rem;
@@ -216,9 +249,9 @@ img {
 /* SVGs
 -------------------------------------------------------------------*/
 svg {
-    fill: currentColor;
-    height: 1rem;
-    width: 1rem;
+  fill: currentColor;
+  height: 1rem;
+  width: 1rem;
 }
 
 /* Lists
@@ -263,13 +296,12 @@ code {
   background-color: $grey-light;
 }
 
-
 /* Disable CSS animations if user preference
 -------------------------------------------------------------------*/
 @media (prefers-reduced-motion: reduce) {
   * {
-     animation: none !important; // sass-lint:disable-line no-important
-     transition: none !important; // sass-lint:disable-line no-important
+    animation: none !important; // sass-lint:disable-line no-important
+    transition: none !important; // sass-lint:disable-line no-important
   }
 }
 
@@ -362,7 +394,7 @@ code {
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+  /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================

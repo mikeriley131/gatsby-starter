@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Layout} from '../components/layout'
+import { Layout } from '../components/layout'
 import SEO from '../components/seo'
 
 const NotFoundPage = () => (
@@ -12,3 +12,14 @@ const NotFoundPage = () => (
 )
 
 export default NotFoundPage
+
+// or if you just want to redirect to home page:
+// const NotFoundPage = () => {
+//   if (typeof window !== 'undefined') {
+//     window.location = '/'
+//   }
+
+//   return null
+// }
+
+// export default NotFoundPage

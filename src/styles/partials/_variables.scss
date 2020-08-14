@@ -4,23 +4,23 @@
 
 // RESPONSIVE MEDIA QUERIES
 // ------------------------------------------------------------------------------
-$breakpoint-xs: 18.75em;  // 300px
-$breakpoint-s: 30em;      // 480px
-$breakpoint-m: 45em;      // 720px
-$breakpoint-l: 60em;      // 960px
-$breakpoint-xl: 75em;     // 1200px
-$breakpoint-xxl: 90em;    // 1440px
+$breakpoint-xs: 18.75em; // 300px
+$breakpoint-s: 30em; // 480px
+$breakpoint-m: 45em; // 720px
+$breakpoint-l: 60em; // 960px
+$breakpoint-xl: 75em; // 1200px
+$breakpoint-xxl: 90em; // 1440px
 
-$XS: 'min-width:'+ $breakpoint-xs;
-$S: 'min-width:'+ $breakpoint-s;
-$M: 'min-width:'+ $breakpoint-m;
-$L: 'min-width:'+ $breakpoint-l;
-$XL: 'min-width:'+ $breakpoint-xl;
-$XXL: 'min-width:'+ $breakpoint-xxl;
+$XS: 'min-width:' + $breakpoint-xs;
+$S: 'min-width:' + $breakpoint-s;
+$M: 'min-width:' + $breakpoint-m;
+$L: 'min-width:' + $breakpoint-l;
+$XL: 'min-width:' + $breakpoint-xl;
+$XXL: 'min-width:' + $breakpoint-xxl;
 
 // FONTS
 // ------------------------------------------------------------------------------
-$font-stack: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+$font-med: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 
 // COLORS
 // ------------------------------------------------------------------------------
@@ -43,8 +43,6 @@ $bg-clr: $white;
 $text-clr: $text;
 $link-clr: $red;
 $link-hover-clr: darken($link-clr, 20%);
-$primary-clr: $blue;
-$primary-light: lighten($blue, 40%);
 $highlight-clr: $red;
 $error: $red;
 $selection: $yellow;
@@ -53,7 +51,7 @@ $selection: $yellow;
 // ------------------------------------------------------------------------------
 $container-width: 800px;
 $space: 1.5rem;
-$double-space: $space*2;
+$double-space: $space * 2;
 $half-space: $space/2;
 $quarter-space: $space/4;
 $eighth-space: $space/8;
