@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `ROOT SITE TITLE`,
     description: `SITE META DESCRIPTION GOES HERE.`,
-    siteURL: `ABSOLUTE PATH TO ROOT URL`,
+    siteUrl: `ABSOLUTE PATH TO ROOT URL`,
     socialImage: `ABSOLUTE PATH TO IMAGE IN STATIC FOLDER`,
     author: `TWITTER HANDLE`,
   },
@@ -62,4 +62,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
-}
+};
