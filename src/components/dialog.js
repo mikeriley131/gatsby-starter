@@ -16,7 +16,7 @@ export const Dialog = ({
   useEffect(() => {
     if (modalIsOpen) {
       // When the modal is shown, we want a fixed body
-      document.body.style.top = `-${window.scrollY}px`;
+      document.body.style.top = `-${window.pageYOffset}px`;
       document.body.style.position = 'fixed';
     } else {
       // When the modal is hidden, we want to remain at the top of the scroll position
