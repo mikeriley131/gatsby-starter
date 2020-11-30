@@ -51,7 +51,13 @@ $selection: $yellow;
 // ------------------------------------------------------------------------------
 $container-width: 800px;
 $space: 1.5rem;
-$double-space: $space * 2;
-$half-space: $space/2;
-$quarter-space: $space/4;
-$eighth-space: $space/8;
+
+$space-100: $space / 8;
+$space-200: $space / 4;
+$space-300: $space / 2;
+$space-400: $space * 0.75;
+$space-500: $space;
+$space-600: $space * 2;
+$space-700: $space * 3;
+$space-800: $space * 4;
+$space-900: $space * 8;

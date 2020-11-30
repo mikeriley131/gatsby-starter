@@ -11,7 +11,7 @@ footer {
   p,
   ul,
   ol {
-    margin-bottom: $space;
+    margin-bottom: $space-500;
 
     &:last-child {
       margin-bottom: 0;
@@ -24,12 +24,12 @@ footer {
 
   ul.aligned-list {
     list-style: disc;
-    margin-left: $half-space;
+    margin-left: $space-300;
 
     li {
-      margin-bottom: $half-space;
-      padding-left: $space;
-      text-indent: -$space;
+      margin-bottom: $space-300;
+      padding-left: $space-500;
+      text-indent: -$space-500;
     }
   }
 
@@ -50,7 +50,7 @@ h1,
 .h1,
 h2,
 .h2 {
-  margin-bottom: $half-space;
+  margin-bottom: $space-300;
 }
 
 h3,
@@ -81,7 +81,7 @@ small {
 }
 
 figure {
-  margin: 0 $space;
+  margin: 0 $space-500;
 }
 
 .iframe-container {
@@ -109,7 +109,7 @@ figure {
 }
 
 table {
-  margin-bottom: $space;
+  margin-bottom: $space-500;
 }
 
 tr {
@@ -120,17 +120,17 @@ tr {
 
 th {
   border-bottom: 1px solid $highlight-clr;
-  padding: $half-space;
+  padding: $space-300;
   padding-bottom: 0;
   text-align: left;
 }
 
 td {
-  padding: $half-space;
+  padding: $space-300;
 }
 
 .container {
-  padding: 0 $half-space;
+  padding: 0 $space-300;
   margin-left: auto;
   margin-right: auto;
   max-width: $container-width;
