@@ -6,20 +6,30 @@
 
 body {
   &:before {
-    background: $grey-dark;
+    background: $color-grey-4;
     bottom: 0;
-    color: $grey-light;
+    color: $color-grey-8;
     content: 'XS';
-    font-size: .75rem;
-    padding: .25em .5em;
+    font-size: 0.75rem;
+    padding: 0.25em 0.5em;
     position: fixed;
     right: 0;
     z-index: 999;
 
-    @include mq($S) { content: 'S'; }
-    @include mq($M) { content: 'M'; }
-    @include mq($L) { content: 'L'; }
-    @include mq($XL) { content: 'XL'; }
-    @include mq($XXL) { content: 'XXL'; }
+    @include mq($S) {
+      content: 'S';
+    }
+    @include mq($M) {
+      content: 'M';
+    }
+    @include mq($L) {
+      content: 'L';
+    }
+    @include mq($XL) {
+      content: 'XL';
+    }
+    @include mq($XXL) {
+      content: 'XXL';
+    }
   }
 }

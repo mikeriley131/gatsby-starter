@@ -24,24 +24,29 @@ $font-med: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 
 // COLORS
 // ------------------------------------------------------------------------------
-$white: #fff;
-$black: #222;
-$grey-lightest: #f0f0f0;
-$grey-lighter: #eee;
-$grey-light: #ccc;
-$grey: #999;
-$grey-dark: #666;
-$text: #222;
-$red: #f00;
+$color-grey-1: rgb(17, 17, 17);
+$color-grey-2: rgb(34, 34, 34);
+$color-grey-3: rgb(66, 66, 66);
+$color-grey-4: rgb(99, 99, 99);
+$color-grey-5: rgb(128, 128, 128);
+$color-grey-6: rgb(159, 159, 159);
+$color-grey-7: rgb(187, 187, 187);
+$color-grey-8: rgb(222, 222, 222);
+$color-grey-9: rgb(238, 238, 238);
+
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+
+$red: #710000;
 $yellow: #f7f71d;
 
 $blue: #3da4ce;
 
 // COLOR CONFIGS
 // ------------------------------------------------------------------------------
-$bg-clr: $white;
-$text-clr: $text;
-$link-clr: $red;
+$bg-clr: $color-grey-9;
+$text-clr: $color-grey-2;
+$link-clr: $color-grey-1;
 $link-hover-clr: darken($link-clr, 20%);
 $highlight-clr: $red;
 $error: $red;
