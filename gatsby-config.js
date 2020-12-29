@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `ROOT SITE TITLE`,
     description: `SITE META DESCRIPTION GOES HERE.`,
-    siteUrl: `ABSOLUTE PATH TO ROOT URL`,
+    siteUrl: `https://mikeriley.dev`,
     socialImage: `ABSOLUTE PATH TO IMAGE IN STATIC FOLDER`,
     author: `TWITTER HANDLE`,
   },

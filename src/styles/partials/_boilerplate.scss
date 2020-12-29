@@ -294,7 +294,7 @@ pre {
 }
 
 code {
-  background-color: $color-grey-8;
+  background-color: $color-grey-2;
 }
 
 /* Disable CSS animations if user preference
@@ -410,7 +410,7 @@ code {
   *:after {
     background: transparent !important; // sass-lint:disable-line no-important
     box-shadow: none !important; // sass-lint:disable-line no-important
-    color: $color-grey-8 !important; // sass-lint:disable-line no-important
+    color: $color-grey-2 !important; // sass-lint:disable-line no-important
     text-shadow: none !important; // sass-lint:disable-line no-important
   }
 
@@ -443,7 +443,7 @@ code {
 
   pre,
   blockquote {
-    border: 1px solid $color-grey-8;
+    border: 1px solid $color-grey-2;
     page-break-inside: avoid;
   }
 
