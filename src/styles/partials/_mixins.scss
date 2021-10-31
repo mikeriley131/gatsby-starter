@@ -1,13 +1,16 @@
 // ===========================================================================
 // ==== MIXINS
 // ===========================================================================
+@use 'sass:math';
 
 // Media Queries
 // -------------------------------------------------------------------
 //   EXAMPLE: use the large breakpoint media query
 //     @include mq($L) {}
 @mixin mq($media-query) {
-  @media ($media-query) { @content; }
+  @media ($media-query) {
+    @content;
+  }
 }
 
 // Responsive Font Sizing
@@ -28,7 +31,7 @@
 
   // Error if the number of breakpoints is < 2
   @if ($length < 2) {
-    @error "poly-fluid-sizing() $map requires at least values"
+    @error "poly-fluid-sizing() $map requires at least values";
   }
 
   // Sort the map by viewport width (key)
@@ -40,12 +43,17 @@
 
   // Interpolated size through breakpoints
   @for $i from 1 through ($length - 1) {
-    @media (min-width:nth($keys, $i)) {
+    @media (min-width: nth($keys, $i)) {
       $value1: map-get($map, nth($keys, $i));
       $value2: map-get($map, nth($keys, ($i + 1)));
       // If values are not equal, perform linear interpolation
       @if ($value1 != $value2) {
-        #{$property}: linear-interpolation((nth($keys, $i): $value1, nth($keys, ($i+1)): $value2));
+        #{$property}: linear-interpolation(
+          (
+            nth($keys, $i): $value1,
+            nth($keys, ($i + 1)): $value2,
+          )
+        );
       } @else {
         #{$property}: $value1;
       }
@@ -53,11 +61,10 @@
   }
 
   // Maxmimum size
-  @media (min-width:nth($keys, $length)) {
+  @media (min-width: nth($keys, $length)) {
     #{$property}: map-get($map, nth($keys, $length));
   }
 }
-
 
 /// linear-interpolation
 /// Calculate the definition of a line between two points
@@ -72,22 +79,23 @@
     @error "linear-interpolation() $map must be exactly 2 values";
   }
   // The slope
-  $m: (map-get($map, nth($keys, 2)) - map-get($map, nth($keys, 1)))/(nth($keys, 2) - nth($keys, 1));
+  $m: math.div(
+    map-get($map, nth($keys, 2)) - map-get($map, nth($keys, 1)),
+    nth($keys, 2) - nth($keys, 1)
+  );
 
   // The y-intercept
   $b: map-get($map, nth($keys, 1)) - $m * nth($keys, 1);
 
   // Determine if the sign should be positive or negative
-  $sign: "+";
+  $sign: '+';
   @if ($b < 0) {
-    $sign: "-";
+    $sign: '-';
     $b: abs($b);
   }
 
-  @return calc(#{$m*100}vw #{$sign} #{$b});
+  @return calc(#{$m * 100}vw #{$sign} #{$b});
 }
-
-
 
 /// map-sort
 /// Sort map by keys
@@ -99,11 +107,15 @@
   $keys: list-sort(map-keys($map));
   $sortedMap: ();
   @each $key in $keys {
-    $sortedMap: map-merge($sortedMap, ($key: map-get($map, $key)));
+    $sortedMap: map-merge(
+      $sortedMap,
+      (
+        $key: map-get($map, $key),
+      )
+    );
   }
   @return $sortedMap;
 }
-
 
 /// list-sort
 /// Sort a SASS list
@@ -125,7 +137,6 @@
   }
   @return $sortedlist;
 }
-
 
 /// list-remove
 /// Remove an item from a list

@@ -1,6 +1,7 @@
 // ===========================================================================
 // ==== VARIABLES
 // ===========================================================================
+@use 'sass:math';
 
 // RESPONSIVE MEDIA QUERIES
 // ------------------------------------------------------------------------------
@@ -31,7 +32,7 @@ $color-grey-4: rgb(99, 99, 99);
 $color-grey-5: rgb(128, 128, 128);
 $color-grey-6: rgb(159, 159, 159);
 $color-grey-7: rgb(187, 187, 187);
-$color-grey-2: rgb(222, 222, 222);
+$color-grey-8: rgb(222, 222, 222);
 $color-grey-9: rgb(238, 238, 238);
 
 $white: rgb(255, 255, 255);
@@ -57,9 +58,9 @@ $selection: $yellow;
 $container-width: 800px;
 $space: 1.5rem;
 
-$space-100: $space / 8;
-$space-200: $space / 4;
-$space-300: $space / 2;
+$space-100: math.div($space, 8);
+$space-200: math.div($space, 4);
+$space-300: math.div($space, 2);
 $space-400: $space * 0.75;
 $space-500: $space;
 $space-600: $space * 2;
