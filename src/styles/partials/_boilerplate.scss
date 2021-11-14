@@ -17,14 +17,6 @@ html {
   color: $text-clr;
   font-size: 100%; // Fallback for @include below. Set to browser default and then use ems when declaring your various font-sizes. (MR)
   line-height: 1.5;
-
-  $map: (
-    18.75em: 1em,
-    45em: 1.0625em,
-    60em: 1.125em,
-    75em: 1.25em,
-  ); // (300px / 720px / 960px / 1200px)
-  @include poly-fluid-sizing('font-size', $map);
 }
 
 *,
