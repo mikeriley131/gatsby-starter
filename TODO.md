@@ -1,5 +1,7 @@
 - set up development environment
 - complete gatsby-config file
+- add custom fonts
+- update variables.scss file
 - header component
 - footer component
 - homepage
@@ -39,6 +41,7 @@
 - overall audit
 - https://sonarwhal.com/scanner
 - google analytics scripts added
+- remove unused boilerplate files
 - update gatsby-config file for launch
   - favicon
   - create Open Graph/Twitter Card image (1200px x 1200px)
