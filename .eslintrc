@@ -1,23 +1,30 @@
 {
-  "extends": ["airbnb", "prettier", "prettier/react"],
-  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier"],
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": 2020,
     "ecmaFeatures": {
       "impliedStrict": true,
       "classes": true
+    },
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
     }
   },
   "env": {
     "browser": true,
     "node": true,
-    "jquery": true,
     "jest": true
   },
   "rules": {
     "import/prefer-default-export": 0,
     "no-use-before-define": ["error", { "variables": false }],
     "react/display-name": 1,
+    "react/function-component-definition": [
+      2,
+      { "namedComponents": "arrow-function" }
+    ],
     "react/jsx-filename-extension": [
       1,
       {
@@ -31,6 +38,7 @@
         "exceptions": ["Slider"]
       }
     ],
+    "react/react-in-jsx-scope": "off",
     "quotes": [
       2,
       "single",
