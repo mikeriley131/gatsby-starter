@@ -1,6 +1,14 @@
 - set up development environment
-- complete gatsby-config file
-- add custom fonts
+  - √ update packages
+  - √ delete cache and git folders
+  - √ create git repo
+    - https://kbroman.org/github_tutorial/pages/init.html
+  - √ yarn install
+  - √ yarn start
+    - ensure site runs as expected
+  - add custom fonts
+  - complete gatsby-config file
+  - restart environment
 - update variables.scss file
 - header component
 - footer component
@@ -41,11 +49,12 @@
 - overall audit
 - https://sonarwhal.com/scanner
 - google analytics scripts added
-- remove unused boilerplate files
+- remove unused boilerplate files and assets (images, icons, fonts, etc.)
 - update gatsby-config file for launch
   - favicon
   - create Open Graph/Twitter Card image (1200px x 1200px)
   - connect to any social media sites
+- update README
 - [WordPress] set up Updraft Plus backups
 - final payment
 - migrate to client's Netlify account

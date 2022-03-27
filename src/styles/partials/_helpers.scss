@@ -1,132 +1,28 @@
 // ===========================================================================
 // ==== HELPER AND MODIFIER CLASSES
 // ===========================================================================
-
-// Grids
-// -------------------------------------------------------------------
-// Heydon Pickering's Fukol grid - https://github.com/Heydon/fukol-grids
-$grid-margin: -.5rem;
-$flex-basis: 10rem;
-$cell-margin: .5rem;
-
-.flex-grid {
-  &__wrapper {
-    margin: 1rem 0;
-    max-width: 960px;
-  }
-
-  &__grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-
-    > * {
-      flex: 1 0 $flex-basis;
-      margin: $cell-margin;
-    }
-  }
+.font-black {
+  font-family: $font-black;
 }
 
-// The HTML
-
-// <div class="flex-grid__wrapper">
-//   <ul class="flex-grid__grid">
-//     <li><!-- grid cell/item/child/whatever --></li>
-//     <li><!-- grid cell/item/child/whatever --></li>
-//     <li><!-- grid cell/item/child/whatever --></li>
-//     <li><!-- grid cell/item/child/whatever --></li>
-//     <li><!-- grid cell/item/child/whatever --></li>
-//     <li><!-- grid cell/item/child/whatever --></li>
-//     <li><!-- grid cell/item/child/whatever --></li>
-//     <li><!-- grid cell/item/child/whatever --></li>
-//   </ul>
-// </div>
-
-
-// Floats
-// -------------------------------------------------------------------
-.left {
-  float: left;
+.font-bold {
+  font-family: $font-bold;
 }
 
-.right {
-  float: right;
+.font-light {
+  font-family: $font-light;
 }
 
-.no-float {
-  float: none;
+.font-med {
+  font-family: $font-med;
 }
 
-
-// Text
-// -------------------------------------------------------------------
-.intro {
-  font-size: 1.25em;
+.font-reg {
+  font-family: $font-reg;
 }
 
-// Widths
-// -------------------------------------------------------------------
-.row {
-  float: left;
-  width: 100%;
-}
-
-.xshort,
-.short,
-.one-third,
-.med,
-.two-thirds,
-.long,
-.xlong,
-.full {
-  float: left;
-  width: 100%;
-}
-
-@include mq($S) {
-  .xshort,
-  .short,
-  .med {
-    width: 25%;
-  }
-
-  .one-third {
-    margin-right: 2%;
-    width: 32%;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .long {
-    margin-right: 2%;
-    width: 49%;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .two-thirds {
-    width: 66.66666%;
-  }
-}
-
-@include mq($L) {
-  .xshort {
-    width: 6.25%;
-  }
-
-  .short {
-    width: 12.5%;
-  }
-
-  .xlong {
-    width: 75%;
-  }
+.font-mono {
+  font-family: $font-mono;
 }
 
 
