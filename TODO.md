@@ -1,0 +1,54 @@
+- set up development environment
+- complete gatsby-config file
+- header component
+- footer component
+- homepage
+- interior pages(s)
+- add site content
+  - static and/or via WordPress API
+- push to Pyrographic Netlify account for dev URL
+- [WordPress] create a WP instance on client's host
+  - SSL required
+- [WordPress] add plugins
+  - Advanced Custom Fields PRO
+  - All-in-One WP Migration
+  - All-in-One WP Migration Unlimited Extension
+  - Classic Editor
+  - Custom Post Type UI
+  - Deploy with NetlifyPress
+  - Duplicate Page
+  - UpdraftPlus - Backup/Restore
+  - WP Gatsby
+  - WP GraphQL
+  - WPGraphQL for Advanced Custom Fields
+- [WordPress] add custom fields
+- [WordPress] add content
+- create interior page template(s) used in gatsby-node
+- get content from WP API
+- add schema.org metadata
+- custom 404 page or redirect to homepage
+- create sitemap
+  - gatsby-plugin-sitemap
+- cross-browser testing
+- Lighthouse audits
+  - accessibility
+  - performance
+- manual accessibility audits
+  - interactive elements navigable via keyboard?
+    - hidden menus?
+- overall audit
+- https://sonarwhal.com/scanner
+- google analytics scripts added
+- update gatsby-config file for launch
+  - favicon
+  - create Open Graph/Twitter Card image (1200px x 1200px)
+  - connect to any social media sites
+- [WordPress] set up Updraft Plus backups
+- final payment
+- migrate to client's Netlify account
+- DNS updates to client's domain
+- launch
+- create GitHub organization for client and migrate repo
+- client documentation
+- client video training session
+- delete TODO
