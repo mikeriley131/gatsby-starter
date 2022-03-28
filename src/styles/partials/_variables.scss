@@ -56,14 +56,14 @@ $selection: $yellow;
 // SPACING
 // ------------------------------------------------------------------------------
 $container-width: 800px;
-$space: 1.5rem;
+$space: 1.5rem; // 24px
 
-$space-100: math.div($space, 8);
-$space-200: math.div($space, 4);
-$space-300: math.div($space, 2);
-$space-400: $space * 0.75;
-$space-500: $space;
-$space-600: $space * 2;
-$space-700: $space * 3;
-$space-800: $space * 4;
-$space-900: $space * 8;
+$space-100: math.div($space, 8);  // 3px
+$space-200: math.div($space, 4);  // 6px
+$space-300: math.div($space, 2);  // 12px
+$space-400: $space * 0.75;        // 18px
+$space-500: $space;               // 24px
+$space-600: $space * 2;           // 48px
+$space-700: $space * 3;           // 72px
+$space-800: $space * 4;           // 96px
+$space-900: $space * 8;           // 192px

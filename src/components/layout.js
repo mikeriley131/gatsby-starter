@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
@@ -18,7 +18,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <Fragment>
         <a className="skip-link" href="#main">
           skip to main content
         </a>
@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
         <main className="main" id="main" role="main">
           {children}
         </main>
-      </>
+      </Fragment>
     )}
   />
 )

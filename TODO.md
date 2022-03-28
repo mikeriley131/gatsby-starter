@@ -10,6 +10,7 @@
   - complete gatsby-config file
   - restart environment
 - update variables.scss file
+- add logo as SVG asset
 - header component
 - footer component
 - homepage
