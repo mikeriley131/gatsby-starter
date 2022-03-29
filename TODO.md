@@ -1,10 +1,10 @@
 - set up development environment
-  - √ update packages
-  - √ delete cache and git folders
-  - √ create git repo
+  - update packages
+  - delete cache and git folders
+  - create git repo
     - https://kbroman.org/github_tutorial/pages/init.html
-  - √ yarn install
-  - √ yarn start
+  - yarn install
+  - yarn start
     - ensure site runs as expected
   - add custom fonts
   - complete gatsby-config file
