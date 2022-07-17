@@ -1,60 +1,74 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+
+import stronethrowersShirtFront from '../images/pt-stonethrowers-shirt-front.png';
+import stronethrowersShirtBack from '../images/pt-stonethrowers-shirt-back.png';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div className="container">
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <Link to="/page-2/">Go to page 2</Link>
+      <h1 className="visuallyhidden">Pulling Teeth</h1>
+      <section>
+        <h2 className="h1">Stonethrowers shirt</h2>
+        <p>
+          We&rsquo;re not a band, but if we can sell some shirts to benefit an
+          organization providing support to LGBTQ youth, we&rsquo;re happy to do
+          so. Proceeds benefit{' '}
+          <a href="https://www.thetrevorproject.org/">the Trevor Project</a>.
+          Design by{' '}
+          <a href="https://www.instagram.com/onetricpony/">Simon Tripcony</a>.
+        </p>
 
-      <h2>Fonts Test</h2>
-      <p className="font-black">
-        Font Black Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Blanditiis alias earum, doloribus accusantium error sed voluptatum
-        libero dolor, repellat officiis, exercitationem officia excepturi.
-        Minima deleniti facere doloremque veritatis error{' '}
-      </p>
+        <div className="flex-wrapper flex-wrapper--two">
+          <div>
+            <img
+              src={stronethrowersShirtFront}
+              alt="front view of black shirt with Pulling Teeth logo and text that reads 'What are you so afraid of?'"
+              loading="lazy"
+              width="600"
+              height="599"
+              decoding="async"
+            />
+          </div>
 
-      <p className="font-bold">
-        Font Bold Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Blanditiis alias earum, doloribus accusantium error sed voluptatum
-        libero dolor, repellat officiis, exercitationem officia excepturi.
-        Minima deleniti facere doloremque veritatis error{' '}
-      </p>
+          <div>
+            <img
+              src={stronethrowersShirtBack}
+              alt="back view of black shirt with the lyrics to the song 'Stonethrowers'."
+              loading="lazy"
+              width="600"
+              height="599"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
 
-      <p className="font-light">
-        Font Light Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Blanditiis alias earum, doloribus accusantium error sed voluptatum
-        libero dolor, repellat officiis, exercitationem officia excepturi.
-        Minima deleniti facere doloremque veritatis error{' '}
-      </p>
+      <section>
+        <h2 className="h1">Heretic Video</h2>
+        <iframe
+          width="1120"
+          height="630"
+          src="https://www.youtube.com/embed/9inzBm9Y-z0"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </section>
 
-      <p className="font-med">
-        Font Medium Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Blanditiis alias earum, doloribus accusantium error sed voluptatum
-        libero dolor, repellat officiis, exercitationem officia excepturi.
-        Minima deleniti facere doloremque veritatis error{' '}
-      </p>
-
-      <p className="font-reg">
-        Font Regular Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Blanditiis alias earum, doloribus accusantium error sed voluptatum
-        libero dolor, repellat officiis, exercitationem officia excepturi.
-        Minima deleniti facere doloremque veritatis error{' '}
-      </p>
-
-      <p className="font-mono">
-        Font Monospace Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Blanditiis alias earum, doloribus accusantium error sed voluptatum
-        libero dolor, repellat officiis, exercitationem officia excepturi.
-        Minima deleniti facere doloremque veritatis error{' '}
-      </p>
+      <section>
+        <h2 className="h1">Coming Soon</h2>
+        <ul>
+          <li>shirt gallery</li>
+          <li>flyer gallery</li>
+          <li>some other stuff</li>
+        </ul>
+      </section>
     </div>
   </Layout>
 );

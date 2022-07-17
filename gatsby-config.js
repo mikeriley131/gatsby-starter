@@ -1,10 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `ROOT SITE TITLE`,
-    description: `SITE META DESCRIPTION GOES HERE.`,
-    siteUrl: `https://mikeriley.dev`,
+    title: `Pulling Teeth`,
+    description: `Archive of music, merch, flyers, and more for Pulling Teeth - Baltimore hardcore.`,
+    siteUrl: `https://pullingteethmd.com`,
     socialImage: `ABSOLUTE PATH TO IMAGE IN STATIC FOLDER`,
-    author: `TWITTER HANDLE`,
   },
   plugins: [
     `gatsby-plugin-remove-trailing-slashes`,
@@ -15,7 +14,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Open Sans:400,700'],
+          families: ['Cinzel Decorative:700,900', 'PT Serif: 400, 400i, 700'],
         },
         // custom: {
         //   families: ['CUSTOMFONT1, CUSTOMFONT2'],
@@ -35,10 +34,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ROOT SITE TITLE`,
-        short_name: `SHORT VERSION OF ROOT SITE TITLE`,
+        name: `Pulling Teeth - Baltimore Hardcore`,
+        short_name: `Pulling Teeth`,
         start_url: `/`,
-        background_color: `HEX VALUE`,
+        background_color: `#111111`,
         theme_color: `HEX VALUE`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.

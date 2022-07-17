@@ -1,52 +1,21 @@
 // ===========================================================================
 // ==== HELPER AND MODIFIER CLASSES
 // ===========================================================================
-// .font-black {
-//   font-family: $font-black;
-// }
+.font-black {
+  font-family: $font-black;
+  font-weight: 900;
+}
 
-// .font-bold {
-//   font-family: $font-bold;
-// }
+.font-bold {
+  font-family: $font-med;
+  font-weight: 700;
+}
 
-// .font-light {
-//   font-family: $font-light;
-// }
+.font-italic {
+  font-family: $font-med;
+  font-style: italic;
+}
 
 .font-med {
   font-family: $font-med;
 }
-
-// .font-reg {
-//   font-family: $font-reg;
-// }
-
-// .font-mono {
-//   font-family: $font-mono;
-// }
-
-// /* FOR WORDPRESS SITES
-// ------------------------------------------------------------------------------ */
-// .align-right {
-//     text-align: right;
-// }
-
-// .align-center {
-//     text-align: center;
-// }
-
-// img.alignleft {
-//     float: left;
-//     margin-right: 20px;
-//     margin-bottom: 20px;
-// }
-
-// img.alignright {
-//     float: right;
-//     margin-left: 20px;
-//     margin-bottom: 20px;
-// }
-
-// img.aligncenter {
-//     margin: 0 auto;
-// }

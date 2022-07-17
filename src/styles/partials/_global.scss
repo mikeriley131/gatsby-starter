@@ -7,8 +7,16 @@ body {
   width: 100%;
 }
 
+main {
+  margin-bottom: $space-600;
+}
+
 main,
 footer {
+  section {
+    margin-bottom: $space-700;
+  }
+
   p,
   ul,
   ol {
@@ -32,6 +40,20 @@ footer {
       padding-left: $space-500;
       text-indent: -$space-500;
     }
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  p strong {
+    font-family: $font-med;
+    font-weight: 700;
+  }
+
+  p em {
+    font-family: $font-med;
+    font-style: italic;
   }
 
   a {
@@ -140,5 +162,17 @@ td {
   @include mq($L) {
     max-width: ($container-width * 1.5);
     padding: 0;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--two {
+      > * {
+        flex-basis: 50%;
+        gap: $space-500;
+      }
+    }
   }
 }

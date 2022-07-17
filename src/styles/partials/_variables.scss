@@ -21,7 +21,9 @@ $XXL: 'min-width:' + $breakpoint-xxl;
 
 // FONTS
 // ------------------------------------------------------------------------------
-$font-med: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+$font-med: 'PT Serif', -apple-system, BlinkMacSystemFont, Helvetica, Arial,
+  serif;
+$font-black: 'Cinzel Decorative', serif;
 
 // COLORS
 // ------------------------------------------------------------------------------
@@ -42,13 +44,14 @@ $red: #710000;
 $yellow: #f7f71d;
 
 $blue: #3da4ce;
+$blue-grey: #c7c6d7;
 
 // COLOR CONFIGS
 // ------------------------------------------------------------------------------
-$bg-clr: $color-grey-9;
-$text-clr: $color-grey-2;
-$link-clr: $color-grey-1;
-$link-hover-clr: darken($link-clr, 20%);
+$bg-clr: $color-grey-1;
+$text-clr: $color-grey-9;
+$link-clr: $blue-grey;
+$link-hover-clr: darken($link-clr, 15%);
 $highlight-clr: $red;
 $error: $red;
 $selection: $yellow;
