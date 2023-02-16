@@ -1,67 +1,75 @@
-- set up development environment
-  - update packages
-  - delete cache and git folders
-  - create git repo
-    - https://kbroman.org/github_tutorial/pages/init.html
-  - yarn install
-  - yarn start
-    - ensure site runs as expected
-  - add custom fonts
-  - complete gatsby-config file
-  - restart environment
-- update variables.scss file
-- add logo as SVG asset
-- header component
-- footer component
-- homepage
-- interior pages(s)
-- add site content
-  - static and/or via WordPress API
-- push to Pyrographic Netlify account for dev URL
-- [WordPress] create a WP instance on client's host
-  - SSL required
-- [WordPress] add plugins
-  - Advanced Custom Fields PRO
-  - All-in-One WP Migration
-  - All-in-One WP Migration Unlimited Extension
-  - Classic Editor
-  - Custom Post Type UI
-  - Deploy with NetlifyPress
-  - Duplicate Page
-  - UpdraftPlus - Backup/Restore
-  - WP Gatsby
-  - WP GraphQL
-  - WPGraphQL for Advanced Custom Fields
-- [WordPress] add custom fields
-- [WordPress] add content
-- create interior page template(s) used in gatsby-node
-- get content from WP API
-- add schema.org metadata
-- custom 404 page or redirect to homepage
-- create sitemap
-  - gatsby-plugin-sitemap
-- cross-browser testing
-- Lighthouse audits
-  - accessibility
-  - performance
-- manual accessibility audits
-  - interactive elements navigable via keyboard?
-    - hidden menus?
-- overall audit
-- https://sonarwhal.com/scanner
-- google analytics scripts added
-- remove unused boilerplate files and assets (images, icons, fonts, etc.)
-- update gatsby-config file for launch
-  - favicon
-  - create Open Graph/Twitter Card image (1200px x 1200px)
-  - connect to any social media sites
-- update README
-- [WordPress] set up Updraft Plus backups
-- final payment
-- migrate to client's Netlify account
-- DNS updates to client's domain
-- launch
-- create GitHub organization for client and migrate repo
-- client documentation
-- client video training session
-- delete TODO
+- [ ]  AWS WordPress instance
+- [ ]  [WordPress] add plugins
+    - [ ]  Advanced Custom Fields PRO
+    - [ ]  All-in-One WP Migration
+    - [ ]  All-in-One WP Migration Unlimited Extension
+    - [ ]  Classic Editor
+    - [ ]  Custom Post Type UI
+    - [ ]  Deploy with NetlifyPress
+    - [ ]  Duplicate Page
+    - [ ]  UpdraftPlus - Backup/Restore
+    - [ ]  WP Gatsby
+    - [ ]  WP GraphQL
+    - [ ]  WPGraphQL for Advanced Custom Fields
+- [ ]  [WordPress] add custom fields
+- [ ]  [WordPress] add content
+- [ ]  Duplicate gatsby-starter repo
+    - [ ]  Delete .git folder
+    - [ ]  Delete .cache folder
+    - [ ]  Delete public folder
+- [ ]  Project repo setup
+    - [ ]  `git init`
+    - [ ]  Update package.json
+    - [ ]  Remove any unneeded files
+    - [ ]  Update packages
+    - [ ]  Run `yarn`
+    - [ ]  Run `yarn start`
+        - [ ]  Ensure site runs as expected
+    - [ ]  Custom fonts
+        - [ ]  Add any custom fonts to `static/fonts` directory
+        - [ ]  Update the `fonts.css` file in that directory
+    - [ ]  Update `gatsby-config.js`
+        - [ ]  Update site metadata
+        - [ ]  Add dev WP url to `gatsby-source-wordpress` optionss
+        - [ ]  Update the `gatsby-plugin-web-font-loader` section to point to the custom fonts
+        - [ ]  Update the `gatsby-plugin-manifest` options
+        - [ ]  Restart local server
+- [ ]  Update variables.scss file
+- [ ]  Add logo as SVG asset
+- [ ]  Header component
+- [ ]  Footer component
+- [ ]  Homepage
+- [ ]  Interior pages(s)
+- [ ]  Create interior page template(s) used in gatsby-node
+- [ ]  Get content from WP API
+- [ ]  Custom 404 page or redirect to homepage
+- [ ]  Add [schema.org](http://schema.org/) metadata
+- [ ]  Testing
+    - [ ]  Cross-browser testing
+    - [ ]  Lighthouse audits
+        - [ ]  accessibility
+        - [ ]  performance
+    - [ ]  Manual accessibility audits
+        - [ ]  Interactive elements navigable via keyboard?
+        - hidden menus?
+    - [ ]  Overall audit - [https://sonarwhal.com/scanner](https://sonarwhal.com/scanner)
+- [ ]  Google analytics scripts added
+- [ ]  Remove unused boilerplate files and assets (images, icons, fonts, etc.)
+- [ ]  Push to Pyrographic Netlify account for dev URL
+- [ ]  Update `gatsby-config.js` file for launch
+    - [ ]  favicon
+    - [ ]  OpenGraph / Twitter card image (1200px x 630px)
+    - [ ]  Connect to any social media sites
+    - [ ]  `gatsby-plugin-accessibilityjs` options to false
+- [ ]  [WordPress] create a WP instance on client's host
+- SSL required
+- [ ]  [WordPress] set up Updraft Plus backups
+- [ ]  Final payment
+- [ ]  Create GitHub organization for client and migrate repo
+- [ ]  Migrate to client's Netlify account
+- [ ]  DNS updates to client's domain
+- [ ]  Launch site
+- [ ]  Update README
+- [ ]  Client documentation
+- [ ]  Client video training session
+- [ ]  delete TODO
