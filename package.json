@@ -20,7 +20,6 @@
     "gatsby-plugin-sitemap": "^6.6.0",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^5.6.0",
-    "gatsby-source-graphql": "^5.6.0",
     "gatsby-source-wordpress": "^7.6.0",
     "gatsby-transformer-sharp": "^5.6.0",
     "prop-types": "^15.8.1",
